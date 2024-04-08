@@ -1,0 +1,125 @@
+<!Doctype html>
+<html>
+ <head>
+	<title>Esther Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+ </head>
+ 
+ <body>
+  <!-- Index page--->
+ <div id="header">
+   <div class="container">
+	   <nav>
+		<img src="images/elogo1.png" class="logo">
+		<ul>
+		 <li><a href="#">Home</a></li>
+		 <li><a href="#">About</a></li>
+		 <li><a href="#">Services</a></li>
+		 <li><a href="#">Portfolio</a></li>
+		 <li><a href="#">Contact</a></li>
+		</ul>
+	   </nav>
+	   
+	   <div class="header-text">
+	   <p>STEM Trainer/Graphic Designer</p>
+	   <h1>Hi, I'm <span>Esther</span><br>Wangechi From Kenya</h1>
+	   </div>
+	   
+   </div>
+ </div>  
+ 
+ <!-- About page--->
+ <div id="about">
+	<div class="container">
+		<!-- creating a two column layout page--->
+		<div class="row">
+			<div class="about-col-1">
+			<img src="images/about.jpg">
+			</div>
+				
+			<div class="about-col-2">
+			<h1 class="sub-title">About Me</h1>
+			<p class="about-me">I am an enthusiastic ICT profession who is eager to contribute to team work success through hard work, attention to detail and excellent organization skill. I have clear understanding of tasks given and training to acquire more skills.
+Motivated to learn, grow and excel in the ICT field.
+.</p>
+            
+			<div class="tab-title">
+			<p class="tab-links active-link" Onclick="opentab('skills')">Skills</p>
+			<p class="tab-links" Onclick="opentab('experience')">Experience</p>
+			<p class="tab-links" Onclick="opentab('education')">Education</p>
+			</div>
+	
+			<div class="tab-contents active-tab" id="skills">
+			<ul>
+			<li><span>STEM TRAINER</span><br>Training STEM Skills(tech skills)</li>
+			<li><span>GRAPHIC DESIGNER</span><br>Designing of social media and print designs</li>
+			<li><span>CODING</span><br>Web/APP Developer</li>
+			<li><span>CISCO</span><br>Networking</li>
+			</ul>
+			</div>
+			
+			<div class="tab-contents" id="experience">
+			<ul>
+			<li><span>2020-2024</span><br>STEM Training:UBUNIFU LEARNING HUB<br>Freel ance Graphic Designer</li>
+			<li><span>2019-2020</span><br>CISCO Instructor:TRACOM COLLEGE</li>
+			<li><span>2019</span><br>Intern:PIXEL LAB</li>
+			<li><span>2017-2019</span><br>APP Development Trainer:Technovation Girls Kenya</li>
+			</ul>
+			</div>
+			
+			<div class="tab-contents" id="education">
+			<ul>
+			<li><span>2015-2019</span><br>BICT:Laikipia University<br>CCNA1&2 </li>
+			<li><span>2011-2014</span><br>KCSE:BridgeWaters Girls High School</li>
+			<li><span>2010-2002</span><br>KCPE:Mama Ngina Primary</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+ </div>
+  <!-- Services page--->
+  <div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+			<h2>STEM Training</h2>
+			<p>I offer STEM training in the listed below Technology field.<br><br>Computer Applications.<br>Graphic Design<br>Programming</p><br>
+			<a href="#">Learn More</a>
+			</div>
+			
+			<div>
+			<h2>Graphic Design</h2>
+			<p>Design services for both social media posts and Design printouts.<br><br>Logo Design.<br>Advert Posters/Flyers<br>Business Cards</p><br>
+			<a href="#">Learn More</a>
+			</div>
+			
+			<div>
+			<h2>School TechClubs</h2>
+			<p>Tech lessons in coding and Design in primary schools techclubs.<br><br>App Development.<br>3D design and printing<br>Graphic Design</p><br>
+			<a href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+  </div>
+  
+  
+ <script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+   
+  function opentab(tabname){
+	for (tablink of tablinks){
+		tablink.classList.remove("active-link");
+    }
+	for (tabcontent of tabcontents){
+		tabcontent.classList.remove("active-tab");
+    }
+	event.currentTarget.classList.add("active-link");
+	document.getElementById(tabname).classList.add("active-tab");
+  }
+ </script>
+ 
+ </body>
+</html>
